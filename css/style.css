@@ -1,15 +1,19 @@
 body 
 {
     background-color: #5c5470;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-ul
+.menuList
 {
     background-color: #352f44;
-    list-style-type: none;
-    padding: 0;
     overflow: hidden;
     text-align: center;
+    padding-bottom: 15px;
+}
+.menuList ul
+{
+    list-style-type: none;
 }
 
 .menu
@@ -19,11 +23,12 @@ ul
 .menu a
 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     display: block;
     text-align: center;
     padding: 16px;
     text-decoration: none;
+    font-weight: bold;
+    block-size: auto;
 }
 .menu a:hover
 {
@@ -34,13 +39,12 @@ ul
 {
     color: white;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container1
 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+
 
     /* Taget från: https://html-css-js.com/css/generator/ */
     background: #0C00CE;
@@ -53,10 +57,18 @@ ul
     text-align: center;
     border-radius: 15px;
 }
+.container1 ul
+{
+    list-style-type: none;
+    padding-right: 40px;
+}
+.container1 p
+{
+    font-size: large;
+}
 .container2
 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 
     /* Taget från: https://html-css-js.com/css/generator/ */
     background: #0C00CE;
@@ -70,10 +82,13 @@ ul
     border-radius: 15px;
     padding: 20px;
 }
+.container2 p
+{
+    font-size: large;
+}
 .homeHeader
 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -81,14 +96,12 @@ ul
 {
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
 .infoWrapper
 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .infoWrapper img
 {
@@ -101,5 +114,40 @@ ul
 {
     color: white;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+}
+iframe
+{
+    border: 0px;
+}
+
+@media only screen and (max-width: 800px) 
+{
+    body
+    {
+        background-color: black;
+    }
+    .menuList
+    {
+        background-color: rgb(32, 32, 32);
+    }
+    .menu a:hover
+    {
+        background-color: rgb(42, 42, 42);
+    }
+}
+
+@media only screen and (min-width: 1200px) 
+{
+    body 
+    {
+        background-color: #1D2033;
+    }
+    .menuList
+    {
+        background-color: #235FE3;
+    }
+    .menu a:hover
+    {
+        background-color: #1d4fbc;
+    }
 }
